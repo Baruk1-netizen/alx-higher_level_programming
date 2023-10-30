@@ -1,0 +1,1 @@
+Python is a general-purpose programming language that is easy to learn and use. It is used for a wide variety of tasks, including web development, data science, machine learning, and more. Python is a popular choice for beginners and experienced programmers alike.
