@@ -1,2 +1,6 @@
 #!/usr/bin/node
-exports.add = (a, b) => a + b;
+
+// 13-add.js
+exports.add = function (a, b) {
+  return a + b;
+};
