@@ -1,14 +1,17 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+"""First state model"""
 
-from sqlalchemy.orm import declarative_base
-from sqlalchemy.orm import Session
-from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, MetaData
 
-Base = declarative_base()
+myMetaData = MetaData()
+Base = declarative_base(metadata=myMetaData)
 
 
 class State(Base):
+    """ class definition of a State and an
+    instance Base = declarative_base()"""
     __tablename__ = 'states'
-
-    id = Column(Integer, primary_key=True, NOT_)
-    name = Column(String(128))
+    id = Column(Integer, primary_key=True, unique=True,
+                nullable=False, autoincrement=True)
+    name = Column(String(128), nullable=False)
